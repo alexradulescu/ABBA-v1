@@ -1,0 +1,11 @@
+<main class="container">
+	<h3>Dashboard</h3>
+	<app-income-expense-form (addedTransfer)="load()"></app-income-expense-form>
+	<ul class="list-group">
+		<app-income-expense
+			class="list-group-item d-flex align-items-top"
+			*ngFor="let transfer of transferList"
+			[incomeExpense]="transfer"
+		></app-income-expense>
+	</ul>
+</main>

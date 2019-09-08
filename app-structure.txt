@@ -1,0 +1,16 @@
+Root  
+  Dashboard
+    Budget List
+    Add Expense
+  Expenses
+    Expense List
+    Expense Form
+  Income
+    Income List
+    Income Form
+  Settings
+    Category List
+    Category Form
+    Budget List
+    Budget Form
+    User Profile

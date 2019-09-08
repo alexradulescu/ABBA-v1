@@ -1,0 +1,43 @@
+<div class="mb-3">
+	<label class="form-group d-block">
+		<input
+			type="text"
+			class="form-control"
+			id="title"
+			placeholder="Title"
+			name="title"
+			[(ngModel)]="title"
+			required
+		/>
+	</label>
+	<label class="form-group d-block">
+		<select
+			class="custom-select"
+			id="category"
+			placeholder="Category"
+			name="category"
+			[(ngModel)]="category"
+		>
+			<option value="food">Food</option>
+			<option value="fun">Fun</option>
+			<option value="charity">Charity</option>
+		</select>
+	</label>
+	<label class="form-group d-block">
+		<input
+			type="numbar"
+			class="form-control"
+			id="amount"
+			placeholder="Amount"
+			name="amount"
+			[(ngModel)]="amount"
+			required
+		/>
+	</label>
+	<button (click)="addTransfer('expense')" class="btn btn-primary btn-sm">
+		Add Expense
+	</button>
+	<button (click)="addTransfer('income')" class="btn btn-success btn-sm">
+		Add Income
+	</button>
+</div>
